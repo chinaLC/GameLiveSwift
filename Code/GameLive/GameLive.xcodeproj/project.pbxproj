@@ -19,6 +19,7 @@
 		DB589F651D45A38100BA72FF /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB589F641D45A38100BA72FF /* Tool.swift */; };
 		DB589F681D45A3A800BA72FF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB589F661D45A3A800BA72FF /* Constants.swift */; };
 		DB589F691D45A3A800BA72FF /* RequestPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB589F671D45A3A800BA72FF /* RequestPaths.swift */; };
+		DBAE9A781D45A75500C821F9 /* FirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAE9A771D45A75500C821F9 /* FirstCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		DB589F641D45A38100BA72FF /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		DB589F661D45A3A800BA72FF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DB589F671D45A3A800BA72FF /* RequestPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestPaths.swift; sourceTree = "<group>"; };
+		DBAE9A771D45A75500C821F9 /* FirstCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		DB589F5B1D45A2AB00BA72FF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DBAE9A771D45A75500C821F9 /* FirstCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				DB589F631D45A35A00BA72FF /* GameLiveNetManager.swift in Sources */,
 				DB589F651D45A38100BA72FF /* Tool.swift in Sources */,
 				DB589F681D45A3A800BA72FF /* Constants.swift in Sources */,
+				DBAE9A781D45A75500C821F9 /* FirstCell.swift in Sources */,
 				DB589F431D45A0FA00BA72FF /* AppDelegate.swift in Sources */,
 				DB589F691D45A3A800BA72FF /* RequestPaths.swift in Sources */,
 				DB589F611D45A30B00BA72FF /* CategoriesModel.swift in Sources */,
