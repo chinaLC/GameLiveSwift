@@ -20,7 +20,47 @@
 		DB589F681D45A3A800BA72FF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB589F661D45A3A800BA72FF /* Constants.swift */; };
 		DB589F691D45A3A800BA72FF /* RequestPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB589F671D45A3A800BA72FF /* RequestPaths.swift */; };
 		DBAE9A781D45A75500C821F9 /* FirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAE9A771D45A75500C821F9 /* FirstCell.swift */; };
+		DBAE9AC31D46080B00C821F9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAE9AC21D46080B00C821F9 /* ImageIO.framework */; };
+		DBAE9AC41D46081800C821F9 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAE9AB91D4607E800C821F9 /* libSDWebImage.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBAE9AB81D4607E800C821F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBAE9AAF1D4607E800C821F9 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53761325155AD0D5005750A4;
+			remoteInfo = SDWebImage;
+		};
+		DBAE9ABA1D4607E800C821F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBAE9AAF1D4607E800C821F9 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 537D95C117ECC1FE0097C263;
+			remoteInfo = "SDWebImage+WebP";
+		};
+		DBAE9ABC1D4607E800C821F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBAE9AAF1D4607E800C821F9 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 531041E0157EAFA400BBABC3;
+			remoteInfo = "SDWebImage+MKAnnotation";
+		};
+		DBAE9ABE1D4607E800C821F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBAE9AAF1D4607E800C821F9 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A2CADFF1AB4BB5300B6BC39;
+			remoteInfo = WebImage;
+		};
+		DBAE9AC01D4607E800C821F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBAE9AAF1D4607E800C821F9 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 00733A4C1BC487C000A5A117;
+			remoteInfo = "WebImage tvOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		84A1F9668BB85F2555D14A20 /* Pods-GameLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-GameLive/Pods-GameLive.release.xcconfig"; sourceTree = "<group>"; };
@@ -40,6 +80,9 @@
 		DB589F661D45A3A800BA72FF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DB589F671D45A3A800BA72FF /* RequestPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestPaths.swift; sourceTree = "<group>"; };
 		DBAE9A771D45A75500C821F9 /* FirstCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCell.swift; sourceTree = "<group>"; };
+		DBAE9A791D4606F400C821F9 /* GameLive-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GameLive-Bridging-Header.h"; path = "../GameLive-Bridging-Header.h"; sourceTree = "<group>"; };
+		DBAE9AAF1D4607E800C821F9 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "../../../../Downloads/SDWebImage-master/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
+		DBAE9AC21D46080B00C821F9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBAE9AC41D46081800C821F9 /* libSDWebImage.a in Frameworks */,
+				DBAE9AC31D46080B00C821F9 /* ImageIO.framework in Frameworks */,
 				0EC64044B85E1C0B2681C244 /* Pods_GameLive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +102,7 @@
 		06C7B15285F50C1CA7FBBC9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DBAE9AC21D46080B00C821F9 /* ImageIO.framework */,
 				9D818AC5BACD7D5850E12794 /* Pods_GameLive.framework */,
 			);
 			name = Frameworks;
@@ -65,6 +111,7 @@
 		DB589F361D45A0F900BA72FF = {
 			isa = PBXGroup;
 			children = (
+				DBAE9AAF1D4607E800C821F9 /* SDWebImage.xcodeproj */,
 				DB589F411D45A0FA00BA72FF /* GameLive */,
 				DB589F401D45A0FA00BA72FF /* Products */,
 				E69D65E745557FC8B9A5898A /* Pods */,
@@ -137,6 +184,7 @@
 		DB589F581D45A2AB00BA72FF /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				DBAE9A791D4606F400C821F9 /* GameLive-Bridging-Header.h */,
 				DB589F4E1D45A0FA00BA72FF /* Info.plist */,
 			);
 			path = SupportingFiles;
@@ -178,6 +226,18 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DBAE9AB01D4607E800C821F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBAE9AB91D4607E800C821F9 /* libSDWebImage.a */,
+				DBAE9ABB1D4607E800C821F9 /* libSDWebImage+WebP.a */,
+				DBAE9ABD1D4607E800C821F9 /* libSDWebImage+MKAnnotation.a */,
+				DBAE9ABF1D4607E800C821F9 /* WebImage.framework */,
+				DBAE9AC11D4607E800C821F9 /* WebImage.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E69D65E745557FC8B9A5898A /* Pods */ = {
@@ -238,12 +298,56 @@
 			mainGroup = DB589F361D45A0F900BA72FF;
 			productRefGroup = DB589F401D45A0FA00BA72FF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DBAE9AB01D4607E800C821F9 /* Products */;
+					ProjectRef = DBAE9AAF1D4607E800C821F9 /* SDWebImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DB589F3E1D45A0FA00BA72FF /* GameLive */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DBAE9AB91D4607E800C821F9 /* libSDWebImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDWebImage.a;
+			remoteRef = DBAE9AB81D4607E800C821F9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DBAE9ABB1D4607E800C821F9 /* libSDWebImage+WebP.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSDWebImage+WebP.a";
+			remoteRef = DBAE9ABA1D4607E800C821F9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DBAE9ABD1D4607E800C821F9 /* libSDWebImage+MKAnnotation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSDWebImage+MKAnnotation.a";
+			remoteRef = DBAE9ABC1D4607E800C821F9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DBAE9ABF1D4607E800C821F9 /* WebImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WebImage.framework;
+			remoteRef = DBAE9ABE1D4607E800C821F9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DBAE9AC11D4607E800C821F9 /* WebImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WebImage.framework;
+			remoteRef = DBAE9AC01D4607E800C821F9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DB589F3D1D45A0FA00BA72FF /* Resources */ = {
@@ -435,10 +539,23 @@
 			baseConfigurationReference = C6C4C96AF52D05F8511078A6 /* Pods-GameLive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GameLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lichen.GameLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GameLive/GameLive-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -447,10 +564,22 @@
 			baseConfigurationReference = 84A1F9668BB85F2555D14A20 /* Pods-GameLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GameLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lichen.GameLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GameLive/GameLive-Bridging-Header.h";
 			};
 			name = Release;
 		};

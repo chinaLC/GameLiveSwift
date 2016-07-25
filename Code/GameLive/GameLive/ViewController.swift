@@ -66,7 +66,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         //            })
         //        }
         let url: NSURL? = NSURL(string: String(self.gameList[indexPath.row].image!))
-//        cell.image?.sd_setImageWithURL(url!)
+        cell.image?.sd_setImageWithURL(url!)
         
         
         return cell
