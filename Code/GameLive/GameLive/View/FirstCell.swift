@@ -14,9 +14,9 @@ class FirstCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        image = UIImageView(frame: CGRectMake(0, 0, self.frame.width, self.frame.height - 100))
+        image = UIImageView(frame: CGRectMake(0, 0, self.frame.width, self.frame.height - 50))
         self.addSubview(image!)
-        title = UILabel(frame: CGRectMake(0, self.frame.height - 100, self.frame.width, 100))
+        title = UILabel(frame: CGRectMake(0, self.frame.height - 50, self.frame.width, 50))
         title?.textAlignment = .Center
         title?.textColor = UIColor.whiteColor()
         self.addSubview(title!)

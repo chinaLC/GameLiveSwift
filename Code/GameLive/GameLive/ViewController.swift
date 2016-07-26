@@ -38,7 +38,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         layout.scrollDirection = .Vertical
         layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
         let width = (kScreenWidth - 30) / 2
-        let height = width * 2
+        let height = width / 2 * 3
         layout.itemSize = CGSizeMake(width, height)
         collectionView = UICollectionView(frame: UIScreen.mainScreen().bounds, collectionViewLayout: layout)
         collectionView?.dataSource = self
