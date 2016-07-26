@@ -22,6 +22,8 @@
 		DBAE9A781D45A75500C821F9 /* FirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAE9A771D45A75500C821F9 /* FirstCell.swift */; };
 		DBAE9AC31D46080B00C821F9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAE9AC21D46080B00C821F9 /* ImageIO.framework */; };
 		DBAE9AC41D46081800C821F9 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAE9AB91D4607E800C821F9 /* libSDWebImage.a */; };
+		DBEC23481D474DCF009B92C0 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEC23471D474DCF009B92C0 /* RecommendViewController.swift */; };
+		DBEC23501D474DE4009B92C0 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEC234F1D474DE4009B92C0 /* GameListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		DBAE9A791D4606F400C821F9 /* GameLive-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GameLive-Bridging-Header.h"; path = "../GameLive-Bridging-Header.h"; sourceTree = "<group>"; };
 		DBAE9AAF1D4607E800C821F9 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "../../../../Downloads/SDWebImage-master/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
 		DBAE9AC21D46080B00C821F9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		DBEC23471D474DCF009B92C0 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		DBEC234F1D474DE4009B92C0 /* GameListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +221,8 @@
 			isa = PBXGroup;
 			children = (
 				DB589F441D45A0FA00BA72FF /* ViewController.swift */,
+				DBEC23471D474DCF009B92C0 /* RecommendViewController.swift */,
+				DBEC234F1D474DE4009B92C0 /* GameListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -419,11 +425,13 @@
 				DB589F451D45A0FA00BA72FF /* ViewController.swift in Sources */,
 				DB589F631D45A35A00BA72FF /* GameLiveNetManager.swift in Sources */,
 				DB589F651D45A38100BA72FF /* Tool.swift in Sources */,
+				DBEC23501D474DE4009B92C0 /* GameListViewController.swift in Sources */,
 				DB589F681D45A3A800BA72FF /* Constants.swift in Sources */,
 				DBAE9A781D45A75500C821F9 /* FirstCell.swift in Sources */,
 				DB589F431D45A0FA00BA72FF /* AppDelegate.swift in Sources */,
 				DB589F691D45A3A800BA72FF /* RequestPaths.swift in Sources */,
 				DB589F611D45A30B00BA72FF /* CategoriesModel.swift in Sources */,
+				DBEC23481D474DCF009B92C0 /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,14 +8,13 @@
 
 import UIKit
 
-let kScreenWidth = UIScreen.mainScreen().bounds.width
 let identify = "Cell"
 
 class ViewController: UIViewController, UICollectionViewDataSource {
-    var collectionView: UICollectionView?
+//    var collectionView: UICollectionView?
     var gameList: [CategoriesModel] = []
     
-    
+    //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
@@ -30,23 +29,26 @@ class ViewController: UIViewController, UICollectionViewDataSource {
                 }
             }
         }
-        
-        
+        self.title = "栏目"
+    }
+    //MARK: Lazyload
+    lazy var collectionView: UICollectionView? = {
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 10
         layout.minimumInteritemSpacing = 10
         layout.scrollDirection = .Vertical
         layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
-        let width = (kScreenWidth - 30) / 2
+        let width = (kScreenW - 30) / 2
         let height = width / 2 * 3
         layout.itemSize = CGSizeMake(width, height)
-        collectionView = UICollectionView(frame: UIScreen.mainScreen().bounds, collectionViewLayout: layout)
+        let collectionView: UICollectionView? = UICollectionView(frame: UIScreen.mainScreen().bounds, collectionViewLayout: layout)
         collectionView?.dataSource = self
         collectionView?.registerClass(FirstCell.self, forCellWithReuseIdentifier: identify)
         collectionView?.backgroundColor = UIColor.whiteColor()
         self.view.addSubview(collectionView!)
-        self.navigationItem.title = "栏目"
-    }
+        return collectionView
+    }()
+    //MARK: CollectionView DateSourse
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }

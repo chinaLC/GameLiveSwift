@@ -9,3 +9,10 @@
 import Foundation
 import Alamofire
 import SnapKit
+//屏幕宽度
+let kScreenW = UIScreen.mainScreen().bounds.width
+//屏幕高度
+let kScreenH = UIScreen.mainScreen().bounds.height
+//Documents文件夹路径
+let kDocPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first
+        
