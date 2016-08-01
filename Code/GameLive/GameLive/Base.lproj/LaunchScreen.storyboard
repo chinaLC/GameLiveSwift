@@ -18,17 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="hNw-4H-Xu1">
-                                <rect key="frame" x="250" y="273" width="100" height="54"/>
+                                <rect key="frame" x="255" y="263.5" width="90" height="73"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="03o-f6-2lj"/>
+                                    <constraint firstAttribute="height" constant="73" id="Eny-nw-gRn"/>
+                                    <constraint firstAttribute="width" constant="90" id="hgb-dd-Hgg"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.64315027000000002" blue="0.95932561159999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hNw-4H-Xu1" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="273" id="SxX-hk-HRW"/>
-                            <constraint firstItem="hNw-4H-Xu1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Uql-kI-S3P"/>
-                            <constraint firstItem="hNw-4H-Xu1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bRL-dm-fzK"/>
+                            <constraint firstItem="hNw-4H-Xu1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8nG-mW-gfU"/>
+                            <constraint firstItem="hNw-4H-Xu1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Zt8-Xm-kXh"/>
                         </constraints>
                     </view>
                 </viewController>

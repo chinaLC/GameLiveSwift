@@ -10,8 +10,8 @@ import UIKit
 
 let identify = "Cell"
 
-class ViewController: UIViewController, UICollectionViewDataSource {
-//    var collectionView: UICollectionView?
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    //    var collectionView: UICollectionView?
     var gameList: [CategoriesModel] = []
     
     //MARK: Life Cycle
@@ -43,11 +43,23 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         layout.itemSize = CGSizeMake(width, height)
         let collectionView: UICollectionView? = UICollectionView(frame: UIScreen.mainScreen().bounds, collectionViewLayout: layout)
         collectionView?.dataSource = self
+        collectionView?.delegate = self
         collectionView?.registerClass(FirstCell.self, forCellWithReuseIdentifier: identify)
         collectionView?.backgroundColor = UIColor.whiteColor()
         self.view.addSubview(collectionView!)
         return collectionView
     }()
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        collectionView.deselectItemAtIndexPath(indexPath, animated: true)
+        print(indexPath.row)
+    }
+    //MARK: Other
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     //MARK: CollectionView DateSourse
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -73,11 +85,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         
         return cell
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
+    
 }
 

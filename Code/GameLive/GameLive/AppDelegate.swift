@@ -54,6 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         UIApplication.sharedApplication().statusBarHidden = true
 
+//        NSThread.sleepForTimeInterval(2)
         return true
     }
     
